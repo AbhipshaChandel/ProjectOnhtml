@@ -1,0 +1,114 @@
+/* Centering the entire content on the page */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* The Container for both Header and Form */
+main {
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling inside the white box */
+header h1 {
+    margin-top: 0;
+    color: #1a73e8; /* Professional Blue */
+    text-align: center;
+    font-size: 3.7rem;
+    border-bottom: 2px solid #e8f0fe;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+/* Better spacing for labels and inputs */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="date"], 
+input[type="number"],
+select, 
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    margin-bottom: 15px; /* Adds space so you don't need <br> */
+    box-sizing: border-box;
+}
+.horizontal-group {
+    display: flex; /* Aligns children in a row */
+    flex-wrap: wrap; /* Allows items to wrap to the next line on small screens */
+    align-items: center; /* Aligns checkboxes/radios with text vertically */
+    gap: 10px; /* Adds space between each item */
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.horizontal-group p {
+    margin: 0;
+    margin-right: 10px;
+    flex-basis: 100%; /* Forces the "Gender:" or "Department:" label to stay on its own line if you want, or remove this to keep it in the row */
+}
+
+/* If you want the "Gender:" title on the same line as the options, use this instead: */
+.horizontal-group p {
+    margin: 0;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* Optional: Make the labels and inputs stay close together */
+.horizontal-group label {
+    display: inline; /* Overrides the 'block' setting from previous code */
+    margin: 0;
+    cursor: pointer;
+}
+
+.horizontal-group input {
+    margin: 0 10px 0 0; /* Space after the input before the next label */
+}
+
+input[type="submit"] {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* This targets the container and all labels */
+main, label {
+    font-size: 20px; 
+}
+
+/* This targets the actual input boxes, dropdowns, and text areas */
+input, select, textarea {
+    font-size: 20px; 
+    padding: 12px; /* Adding padding makes the boxes bigger to match the text */
+}
+
+input[type="submit"]:hover {
+    background-color: #1557b0;
+}

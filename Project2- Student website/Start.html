@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #b1bcd6, #2656a3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form */
+form {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Input focus */
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #1e40af;
+}
+
+    </style>
+</head>
+<body>
+    <form action="#">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter your Email">
+        <br>
+        <label for="name">Username</label>
+        <input type="text" id="name" placeholder="Enter your Username">
+        <br>
+        <label for="password">password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+        <br>
+        <input type="submit" value="submit">
+        
+    </form>
+</body>
+</html>

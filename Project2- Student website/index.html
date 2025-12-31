@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Website</title>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header & Background Image */
+header {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    /* This uses your image as a full background */
+    background: linear-gradient(rgba(12, 3, 3, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://cdn.analyticsvidhya.com/wp-content/uploads/2024/04/Top-8-Coding-Platforms-for-Data-Science-Beginner-01-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Hide the raw img tag since we are using it as a CSS background */
+header div img {
+    display: none;
+}
+
+header h1 {
+    font-size: 6rem;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+header p {
+    max-width: 700px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Main Content */
+main {
+    padding: 50px 10%;
+}
+
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    /* margin-bottom: 10px; */
+}
+
+pre {
+    white-space: pre-wrap; /* Allows text to wrap on mobile */
+    font-family: inherit;
+    background: #f7f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Concept Table / Cards */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th {
+    font-size: 3rem;
+    padding-bottom: 20px;
+    color: #2c3e50;
+    text-transform: uppercase;
+}
+
+/* Styling the links/images to look like cards */
+td {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Makes it mobile responsive */
+}
+
+td a img {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+td a img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Footer & Button */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size:1.8rem;
+}
+
+footer a {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background 0.3s;
+}
+
+footer a:hover {
+    background-color: #2ecc71;
+}
+    </style>
+</head>
+<body>
+    <header>
+    <h1>WELCOME TO LEARN</h1>
+    <div>
+        <!-- use this as background image -->
+    <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2024/04/Top-8-Coding-Platforms-for-Data-Science-Beginner-01-scaled.jpg" alt="learn">
+     </div>
+    <p>Confused about which course to take? We've got you covered! Browse courses and discover the best option for you. It's free! LEARN is my effort to teach the basics and those coding techniques in a short time that took me years to master.</p>
+    </header>   
+    <main>
+    <section>
+    <h2> Learn Smarter with Real-World Practice</h2>
+    <pre>At LEARN, you don't just learn code, you engage in practical exercises that reflect real-world scenarios.
+     From beginner-friendly lessons to advanced courses trusted by professionals,
+      we prepare you for real-world projects.</pre>
+    </section>
+    <section>
+        <table>
+            <tr>
+                <th colspan="3">
+                    CONCEPT COVERED
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <a target="_blank" href="DataStructures.html"><img src="https://i.ytimg.com/vi/9pKcYWQEB_s/maxresdefault.jpg" height="200" alt="DataStructures"></a>
+                    <a target="_blank" href="Webdevlopment.html"><img src="https://tse2.mm.bing.net/th/id/OIP.qyHgF2j7tmHsEF3u3qL_KwHaDJ?pid=Api&P=0&h=180" height="200" alt="Webdevlopment"></a>
+                    <a target="_blank" href="ArtificialIntelligence.html"><img src="https://aitsrajampet.ac.in/images/pdf/ai/ai-banner.png" height="200" alt="Datascience and AI"></a>
+                </td>
+            </tr>
+        </table>
+    </section>
+    </main>
+    <footer>
+        <section>
+            <p> Start Your Coding Journey </p>
+            <a target="_blank" href="Start.html">Start Now</a>
+        </section>
+    </footer>
+
+
+
+</body>
+</html>

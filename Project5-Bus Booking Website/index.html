@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus Booking Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          src="data:image/png;base64,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"
+          height="38"
+          alt="image"
+        />
+        <a href="https://www.redbus.in/bus-tickets">BUS TICKETS</a>
+      </div>
+      <div>
+       <pre> <a href="https://www.redbus.in/info/redcare">Help</a>   <a href="https://www.redbus.in/Home/PrintTicket">Print/SMS Ticket</a>   <a href="https://www.redbus.in/Cancellation">Cancel ticket</a></pre>
+      </div>
+      <div>
+        <ol>
+          <li><a href="https://www.redbus.in"><h3>Home</h3></a></li>
+          <li><a href="/bus-tickets"><h3>Bus Tickets</h3></a></li>
+        </ol>
+      </div>
+    </header>
+    <main>
+      <div>
+        <!-- make this as background image -->
+        <img src="bus2.png" alt="image" />
+        <div>
+          <h1>Bus Ticket Booking Online</h1>
+        </div>
+        <div>
+          <h2>Book Bus Tickets in India</h2>
+        </div>
+        <section class="search-container">
+          <div class="search-box">
+            <div class="input-group">
+              <label>FROM</label>
+              <input type="text" placeholder="Enter Source City" />
+            </div>
+            <div class="input-group">
+              <label>TO</label>
+              <input type="text" placeholder="Enter Destination City" />
+            </div>
+            <div class="input-group">
+              <label>DATE</label>
+              <input type="date" />
+            </div>
+            <button class="search-btn">SEARCH BUSES</button>
+          </div>
+        </section>
+      </div>
+      <div>
+        <h1>Table of Content</h1>
+        <h2>Book Bus Tickets Online on redBus</h2>
+        <p>
+          With 5,200+ bus operators and over 56+ million satisfied customers,
+          redBus is one of India’s leading online bus ticket booking platforms.
+          redBus offers an extremely easy and convenient bus ticket booking
+          experience for travellers in the comfort of their home. You have a
+          wide range of options in the bus operators, bus types, seats, and
+          other services available that fulfil your travel needs. You can easily
+          use filters to sort the best bus prices and get discounts and other
+          services when booking bus tickets on redBus. Check out the brief
+          information on online bus booking to help you book bus tickets fast.
+        </p>
+        <div>
+          <h2>Why Choose redBus for Bus Ticket Booking?</h2>
+          <p>
+            Online bus ticket booking with redBus is simpler. There are several
+            reasons for you to book a bus ticket online with redBus. Below are
+            the reasons to choose redBus for bus tickets booking.
+          </p>
+          <ul>
+            <li>
+              Free Cancellation- Freedom to cancel bus tickets without paying
+              cancellation charges.
+            </li>
+            <li>
+              Flexi Ticket- Modify your travel date at least 8 hours before the
+              departure
+            </li>
+            <li></li>
+            <li>
+              Earn Rewards- Get INR 100 in your redBus wallet by referring your
+              friend after they complete their first trip.
+            </li>
+            <li>
+              Booking for Women- Get exclusive benefits for women travellers.
+              They can view the number of women on your bus when booking bus
+              tickets.
+            </li>
+            <li>
+              Primo Services- Choose your top-rated bus operators serving Primo
+              Buses. These operators offer timely and customer-friendly Primo
+              services.
+            </li>
+            <li>
+              24/7 Customer Support- Get 24/7 customer service on bus bookings.
+            </li>
+            <li>
+              Live Bus Tracking- Track your bus in real-time and plan your
+              travel accordingly.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>How to Book a Bus Ticket on redBus?</h2>
+          <p>
+            The following steps outline the standard bus ticket booking
+            procedure:
+          </p>
+          <ul>
+            <li>
+              Step 1: Go to the redBus website or application for bus booking.
+            </li>
+            <li>
+              Step 2: Enter your travel date and journey details. Click on the “
+              Search Buses”.
+            </li>
+            <li>
+              Step 3: A list of available buses will be displayed on the screen.
+              Choose your preferred bus operator, bus type and seat.
+            </li>
+            <li>
+              >Step 4: Once you select your preferred seat, choose boarding and
+              dropping points listed on the screen to proceed with the payment
+              process.
+            </li>
+            <li>
+              Step 5: Choose your preferred payment method to confirm your bus
+              ticket booking.
+            </li>
+            <li>
+              Step 6: After the payment has been processed successfully, you
+              will receive a confirmation message on your registered mobile
+              number or email ID.
+            </li>
+          </ul>
+        </div>
+        <h2>RTC or Government Bus Ticket Booking on redBus</h2>
+        <p>
+          redBus has partnered with Government or RTC (Road Transport
+          Corporations) to provide affordable bus services to commuters. Some of
+          the government bus operators include KSRTC (Kerala), UPSRTC, GSRTC,
+          HRTC, OSRTC, TSRTC, and others.
+        </p>
+        <div>
+          <h2>Bus Types Available with redBus for Bus Booking Online</h2>
+          <p>
+            redBus ensures best-in-class bus services all travellers by offering
+            different types of buses, keeping their travel needs and comfort in
+            mind. Below are some of the types of buses available when booking
+            bus tickets on redBus.
+          </p>
+          <ul>
+            <li>AC Sleeper</li>
+            <li>Semi-Sleeper</li>
+            <li>Non-AC Sleeper</li>
+            <li>Non-AC Seater</li>
+            <li>AC Seater</li>
+            <li>AC Seater</li>
+            <li>Volvo</li>
+            <li>Scania</li>
+          </ul>
+          <p>
+            Whether you are opting for sleeper bus booking for a comfortable
+            night journey or choosing Volvo bus booking for superior ride
+            quality, redBus offers complete flexibility.
+          </p>
+        </div>
+        <h2>Exclusive Bus Booking Offers</h2>
+        <p>
+          redBus provides exclusive bus booking offers, keeping in mind the
+          first-time users and frequent travellers. Promotions are updated
+          regularly, especially around festivals and holidays. Users are advised
+          to check the “Offers” section on the bus ticket booking app for
+          real-time updates.
+        </p>
+        <div>
+          <h2>Easy Bus Booking Tips for Travellers</h2>
+          <p>
+            Below are a few things to remember when booking bus tickets online.
+          </p>
+          <ul>
+            <li>Book buses early during peak times.</li>
+            <li>Use filters to identify the cheapest bus booking options.</li>
+            <li>
+              Check your preferred bus type depending on your comfort and
+              budget.
+            </li>
+            <li>
+              Look for the nearest bus stands or stops to avoid a long commute
+              within the city.
+            </li>
+            <li>
+              Check reviews and ratings of bus operators to experience a
+              hassle-free bus journey.
+            </li>
+            <li>
+              Use offers and discounts using the coupon code to save money on
+              bus bookings.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>
+        <pre><h1>Why redBus for
+Bus Booking?</h1></pre>
+        </div>
+        <br><br>
+        <div>
+          <img
+            src="https://s1.rdbuz.com/web/images/home/customer_care.png"
+            height="60"
+            alt="SUPERIOR CUSTOMER SERVICE"
+          />
+          <h3>SUPERIOR CUSTOMER SERVICE</h3>
+          <p>
+            We put our experience and relationships to good use and are
+            available to solve your bus travel issues.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://s1.rdbuz.com/web/images/home/lowest_Fare.png"
+            height="60"
+            alt="LOWEST PRICES"
+          />
+          <h3>LOWEST PRICES</h3>
+          <p>
+            We always give you the lowest bus tickets price with the best
+            partner offers.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://s2.rdbuz.com/web/images/home/benefits.png"
+            height="60"
+            alt="UNMATCHED BENEFITS"
+          />
+          <h3>UNMATCHED BENEFITS</h3>
+          <p>
+            We take care of your travel beyond ticketing by providing you with
+            innovative and unique benefits.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2>Top Routes</h2>
+          <p>
+            Bangalore to Chennai | Chennai to Bangalore | Hyderabad to Bangalore
+            | Bangalore to Hyderabad | Chennai to Coimbatore | Coimbatore to
+            Chennai | Chennai to Madurai | Hyderabad to Vijayawada | Madurai to
+            Chennai | Bangalore to Coimbatore | Coimbatore to Bangalore |
+            Vijayawada to Hyderabad | Chennai to Tiruchirapalli | Chennai to
+            Salem | Bangalore to Tirupathi | Pune to Nagpur | Hyderabad to
+            Visakhapatnam | Nagpur to Pune | Tiruchirapalli to Chennai | Salem
+            to Chennai | Indore to Bhopal | Pune to Mumbai | Lucknow to Delhi |
+            Mumbai to Pune | Bhopal to Indore
+          </p>
+        </div>
+        <hr />
+        <div>
+          <h2>Top Operators</h2>
+          <p>
+            No 1 Air Travels | YBM Travels(BLM) | Sri SMS Travels | Svkdt
+            travels | RKT Tours and TravelsCity | TravelsSangitam | TravelsTranz
+            king travelsVetri | TravelsChartered | BusV Kaveri | TravelsKallada
+            Travels (Suresh Kallada) | Chalo Bus (Sutra Sewa) | Krish |
+            TravelsEssaar(SBLT) | Shri Bhagiyalakshimi Travels (MAARA)RKK |
+            TravelsCity Land TravelsLaxmi holidays | Orange Tours And Travels |
+            Parveen Travels | Konduskar Travels Pvt. Ltd | Sri Krishna Travels |
+            A1 TravelszingbusYolo | BusShyamoli Paribahan Pvt Ltd | Morning Star
+            | TravelsIntrCity | SmartBus | Sri Krishna Travels | MRM TravelsSRS
+            | TravelsRathimeena | Travels | BNueGoSugama | TouristGo | Tour
+            Travels and HolidaysVRL | TravelsChartered | BusGreenLine Travels
+            And Holidays | Neeta tours and travels | Hans Travels (I) Private
+            Limited
+          </p>
+        </div>
+        <hr />
+        <div>
+          <h2>Top Cities</h2>
+          <p>
+            Bangalore bus ticket booking | Chennai bus ticket booking |
+            Hyderabad bus ticket booking | Pune bus ticket booking | Delhi bus
+            ticket booking | Coimbatore bus ticket booking | Mumbai bus ticket
+            booking | Indore bus ticket booking | Jaipur (Rajasthan) bus ticket
+            booking | Kolkata bus ticket booking | Ahmedabad bus ticket booking
+            | Vijayawada bus ticket booking | Madurai bus ticket booking |
+            Nagpur bus ticket booking | Guwahati bus ticket booking |
+            Prayagraj(Uttar Pradesh) bus ticket booking | Bhopal bus ticket
+            booking | Tirupati bus ticket booking | Lucknow bus ticket booking |
+            Chandigarh bus ticket booking
+          </p>
+        </div>
+        <hr />
+        <div>
+          <h2>Top Government bus</h2>
+          <p>
+            APSRTC bus booking | TSRTC bus booking | KSRTC (Kerala) bus booking
+            | UPSRTC bus booking | RSRTC bus booking | South Bengal State
+            Transport Corporation (SBSTC) bus booking | TNSTC bus booking |
+            Puducherry Road Transport Corporation (PRTC) bus booking | Bihar
+            State Tourism Development Corporation (BSTDC) bus booking | PEPSU
+            (Punjab) bus booking | Sikkim Nationalised Transport (SNT) bus
+            booking | West bengal transport corporation bus booking | NORTH
+            BENGAL STATE TRANSPORT CORPORATION bus booking | GSRTC bus booking |
+            Kadamba Transport Corporation Limited (KTCL) bus booking | Meghalaya
+            Transport Corporation(MTC) bus booking | KAAC TRANSPORT bus booking
+            | HRTC bus booking | BSRTC Operated By VIP Travels bus booking |
+            Assam State Transport Corporation (ASTC) bus booking | Bihar state
+            road transport corporation (BSRTC) bus booking | Chandigarh
+            Transport Undertaking (CTU) bus booking | PEPSU (Punjab) bus booking
+            | Himachal Pradesh Tourism Development Corporation (HPTDC) bus
+            booking | WBTC (CTC) bus booking
+          </p>
+        </div>
+        <hr />
+      </div>
+      <div><br>
+        <h1>How to book bus tickets online on redBus?</h1><br>
+        <a href=""
+          ><iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/eyAAUGhvZu8?si=Ryu6wOrfooIVD8gc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe
+        ></a>
+      </div><br><br>
+      <div>
+        <h1>FAQ's Related to Bus Booking with redBus</h1><br>
+        <div>
+          <h3>Is it safe to book bus tickets online on redBus?</h3>
+          <p>
+            Yes. redBus is a verified and secure platform trusted by millions,
+            offering encrypted payment and real-time seat selection.
+          </p>
+        </div>
+        <div>
+          <h3>Can I download my ticket after booking?</h3>
+          <p>
+            Yes. A bus ticket download link is sent via SMS and email after
+            successful payment.
+          </p>
+        </div>
+        <div>
+          <h3>Are Government-run RTC buses available on redBus?</h3>
+          <p>
+            Yes. You can book seats on KSRTC, RSRTC, HRTC, and other RTCs
+            through the redBus website or app.
+          </p>
+        </div>
+        <div>
+          <h3>How do I get discounts on redBus?</h3>
+          <p>
+            Visit the “Offers” section for ongoing bus booking offers and apply
+            the coupon code when making the payment in order to get some
+            discounts on your original bus ticket price.
+          </p>
+        </div>
+        <div>
+          <h3>Which bus types are best for overnight journeys?</h3>
+          <p>
+            Sleeper buses and Volvo coaches are recommended for long-duration or
+            overnight travel due to enhanced comfort.
+          </p>
+        </div>
+        <div>
+          <h3>Can I make last-minute bookings on redBus?</h3>
+          <p>
+            Yes. Subject to seat availability, you can complete bus ticket
+            booking even a few hours before the departure.
+          </p>
+        </div>
+        <div>
+          <h3>How do I find the cheapest bus tickets?</h3>
+          <p>
+            Use the “sort by fare” filter and explore multiple travel bus
+            options to identify the cheapest bus booking.
+          </p>
+        </div>
+        <div>
+          <h3>How many bus operators are available on redBus?</h3>
+          <p>
+            redBus currently partners with over 5,200+ operators across India.
+            You get a wide range of bus operators to choose from.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <div>
+          <img
+            src="data:image/png;base64,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"
+            height="48"
+            alt="image"
+          />
+          <pre>
+          redBus is the world's largest online bus ticket booking
+          service trusted by over 56 million happy customers globally.
+          redBus offers bus ticket booking through its website,iOS
+          and Android mobile apps for all major routes in India.</pre>
+        </div><br>
+        <div>
+          <table>
+            <tr>
+              <th>Book</th>
+              <th>About redBus</th>
+              <th>Traveller Tools</th>
+              <th>Legal</th>
+              <th>Apps</th>
+              <th>Global Site</th>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>Bus Tickets</li>
+                  <li>Train Tickets</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>About Us</li>
+                  <li>Contact us</li>
+                  <li>Mobile Version</li>
+                  <li>Agent Registration</li>
+                  <li>Careers</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Track My Bus</li>
+                  <li>Cancellation</li>
+                  <li>Print E Ticket</li>
+                  <li>FAQ</li>
+                  <li>Sitemap</li>
+                  <li>Offers</li>
+                  <li>Blog</li>
+                  <li>Primo</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Terms & Conditions</li>
+                  <li>Privacy Policy</li>
+                  <li>Cookie Policy</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>redBus</li>
+                  <li>Redrail</li>
+                  <li>Make My Trip App</li>
+                  <li>Make My Trip UAE App</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>India</li>
+                  <li>Singapore</li>
+                  <li>Indonesia</li>
+                  <li>Vietnam</li>
+                  <li>Malaysia</li>
+                  <li>Colombia</li>
+                  <li>Peru</li>
+                  <li>International</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <hr />
+      <div>&copy 2026 Redbus India Private Limited</div>
+      <div>
+        <a href="https://www.facebook.com/redBus.in/"
+          ><img src="facebook.png" height="20" alt=""
+        /></a>
+        <a href="https://in.linkedin.com/company/redbus_2/"
+          ><img src="linkedin.png" height="20" alt=""
+        /></a>
+        <a href="https://twitter.com/redbus_in/"
+          ><img src="twitter.png" height="20" alt=""
+        /></a>
+        <a href="https://www.instagram.com/redbusindia/"
+          ><img
+            src="https://static.vecteezy.com/system/resources/thumbnails/057/965/126/small/an-instagram-logo-with-a-black-square-in-the-center-free-vector.jpg"
+            height="20"
+            alt="instagram"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
